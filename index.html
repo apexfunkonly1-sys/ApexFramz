@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Framz — YouTube Designer | Logos, Banners & Thumbnails</title>
+  <meta name="description" content="Professional YouTube logos, banners and thumbnails by Apex Framz. Premium channel branding and graphic design for creators.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:title" content="Apex Framz — YouTube Designer">
+  <meta property="og:description" content="Premium YouTube logos, banners and thumbnails designed by Apex Framz.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/apex-framz-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070707;--panel:#0d0d0d;--panel2:#111;--text:#f5f5f5;--muted:#8e8e8e;--line:#252525;--soft:#151515;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+    .noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}
+    .wrap{max-width:var(--max);margin:auto;padding:0 28px}.nav{position:fixed;top:0;left:0;right:0;z-index:10;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(7,7,7,.78);backdrop-filter:blur(18px)}
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.04em;font-size:19px}.brand span{color:#888}
+    .links{display:flex;gap:28px;color:#aaa;font-size:13px;font-weight:600}.links a{transition:.2s}.links a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+    .hero{min-height:780px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:70px;padding-top:105px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:500px;height:500px;right:-180px;top:120px;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 68%);pointer-events:none}
+    .eyebrow{font-family:"DM Mono",monospace;color:#aaa;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px}.eyebrow b{color:#fff}
+    h1{font-size:clamp(50px,7.2vw,94px);line-height:.91;letter-spacing:-.075em;margin:0 0 28px;max-width:760px}h1 span{color:#777}
+    .lead{font-size:17px;color:#999;max-width:600px}.actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{padding:14px 20px;border:1px solid var(--line);background:#f4f4f4;color:#050505;font-weight:800;font-size:12px;letter-spacing:.05em}.btn.alt{background:transparent;color:#fff}.btn:hover{transform:translateY(-2px);transition:.2s}
+    .showcase{position:relative;min-height:520px}.frame{position:absolute;border:1px solid #2b2b2b;background:#0b0b0b;box-shadow:0 30px 70px #000;overflow:hidden}.frame img{width:100%;height:100%;object-fit:cover;display:block}.frame.one{width:290px;height:350px;right:8%;top:25px;transform:rotate(5deg)}.frame.two{width:300px;height:175px;left:4%;top:150px;transform:rotate(-4deg);background:linear-gradient(135deg,#171717,#050505)}.frame.three{width:250px;height:145px;left:18%;bottom:34px;transform:rotate(4deg);background:linear-gradient(135deg,#202020,#080808)}
+    .mock{padding:18px;height:100%;display:flex;flex-direction:column;justify-content:space-between}.mock small{font-family:"DM Mono";color:#777}.mock strong{font-size:28px;letter-spacing:-.05em}.mock .bar{height:5px;background:#eee;width:70%}.frame.two:after,.frame.three:after{content:"APEX FRAMZ";position:absolute;left:18px;bottom:16px;font-size:11px;font-weight:800;letter-spacing:.15em}
+    section{padding:120px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}.kicker{font-family:"DM Mono";font-size:11px;color:#777;letter-spacing:.16em}.sectionhead h2{font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.065em;margin:8px 0 0}.sectionhead p{max-width:420px;color:#888;margin:0}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:transparent;color:#888;padding:9px 13px;font-size:11px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:#eee;color:#080808}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.project{grid-column:span 6;border:1px solid var(--line);background:var(--panel);min-height:340px;position:relative;overflow:hidden;cursor:pointer}.project.wide{grid-column:span 8}.project.small{grid-column:span 4}.visual{height:280px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#171717,#080808);position:relative;overflow:hidden}.visual:before{content:"";position:absolute;width:220px;height:220px;border:1px solid #333;transform:rotate(45deg)}.visual .type{position:relative;font-weight:900;font-size:42px;letter-spacing:-.07em}.visual.thumb{background:linear-gradient(135deg,#222,#080808)}.visual.banner{height:250px}.visual.logo .type{font-size:64px}.visual.branding{background:#0a0a0a}.projectinfo{padding:18px 20px;display:flex;justify-content:space-between;gap:20px}.projectinfo h3{margin:0;font-size:15px}.projectinfo p{margin:3px 0 0;color:#777;font-size:12px}.tag{font-family:"DM Mono";font-size:9px;color:#777;text-transform:uppercase}.project:hover .visual{transform:scale(1.025);transition:.35s}.project[hidden]{display:none}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.service{padding:34px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:250px}.num{font-family:"DM Mono";font-size:11px;color:#666}.service h3{font-size:26px;letter-spacing:-.04em;margin:45px 0 10px}.service p{color:#888;max-width:420px;margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.aboutcopy p{color:#999;font-size:17px;max-width:560px}.logo-card{border:1px solid var(--line);padding:22px;background:#0b0b0b}.logo-card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:35px}.fact{padding:17px 0;border-bottom:1px solid var(--line);color:#777;font-size:12px}.fact strong{display:block;color:#eee;margin-top:5px;font-size:14px}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.step{padding:25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:220px}.step .n{font-family:"DM Mono";color:#666}.step h3{margin:55px 0 10px;font-size:17px}.step p{color:#777;font-size:13px;margin:0}
+    .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.contactcopy p{color:#888;max-width:430px}.form{display:grid;gap:12px}.form input,.form select,.form textarea{width:100%;border:1px solid var(--line);background:#0b0b0b;color:#fff;padding:15px;outline:none}.form input:focus,.form select:focus,.form textarea:focus{border-color:#777}.form textarea{min-height:150px;resize:vertical}.form .btn{border:0;cursor:pointer}.status{font-size:12px;color:#888;min-height:18px}
+    .cta{padding:100px 0 125px;text-align:center;border-top:1px solid var(--line)}.cta h2{font-size:clamp(46px,7vw,86px);line-height:.9;letter-spacing:-.075em;margin:0 auto 32px;max-width:850px}.footer{border-top:1px solid var(--line);padding:28px 0;color:#666;font-size:11px}.footerin{display:flex;justify-content:space-between;gap:20px}.footer strong{color:#eee}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:850px){.links{display:none}.menu{display:block}.hero{grid-template-columns:1fr;gap:20px;min-height:auto;padding-top:150px;padding-bottom:90px}.showcase{min-height:440px}.frame.one{right:3%;width:240px;height:290px}.frame.two{left:0;width:270px}.frame.three{left:18%;width:230px}.sectionhead{display:block}.sectionhead p{margin-top:18px}.project,.project.wide,.project.small{grid-column:span 12}.services{grid-template-columns:1fr}.about,.contact{grid-template-columns:1fr;gap:45px}.process{grid-template-columns:1fr 1fr}.wrap{padding:0 20px}}
+    @media(max-width:520px){h1{font-size:52px}.process{grid-template-columns:1fr}.showcase{min-height:390px}.frame.one{width:200px;height:245px}.frame.two{width:230px;height:140px;top:125px}.frame.three{width:200px;height:120px;bottom:20px}.visual{height:240px}.footerin{display:block}.footerin div+div{margin-top:10px}}
+  </style>
+</head>
+<body>
+<div class="noise"></div>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#top">APEX <span>FRAMZ</span></a>
+  <nav class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+  <button class="menu" aria-label="Open menu">☰</button>
+</div></header>
+
+<main id="top">
+<section class="hero wrap">
+  <div class="reveal">
+    <div class="eyebrow"><b>●</b> AVAILABLE FOR PROJECTS</div>
+    <h1>DESIGNS THAT MAKE <span>CHANNELS STAND OUT.</span></h1>
+    <p class="lead">Apex Framz creates premium YouTube logos, banners and thumbnails designed to make your channel look professional and unforgettable.</p>
+    <div class="actions"><a class="btn" href="#work">VIEW MY WORK</a><a class="btn alt" href="#contact">GET A DESIGN</a></div>
+  </div>
+  <div class="showcase reveal" aria-label="Apex Framz design showcase">
+    <div class="frame one"><img src="assets/apex-framz-logo.png" alt="Apex Framz logo"></div>
+    <div class="frame two"><div class="mock"><small>YOUTUBE / BANNER</small><strong>MAKE<br>THE FIRST<br>IMPRESSON.</strong><div class="bar"></div></div></div>
+    <div class="frame three"><div class="mock"><small>THUMBNAIL / 01</small><strong>CLICK<br>WORTHY.</strong></div></div>
+  </div>
+</section>
+
+<section id="work"><div class="wrap">
+  <div class="sectionhead reveal"><div><div class="kicker">01 / SELECTED WORK</div><h2>SELECTED WORK</h2></div><p>Portfolio concepts and presentation pieces. Replace these visuals with your latest client or personal work.</p></div>
+  <div class="filters reveal">
+    <button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="thumbnail">THUMBNAILS</button><button class="filter" data-filter="banner">BANNERS</button><button class="filter" data-filter="logo">LOGOS</button><button class="filter" data-filter="branding">BRANDING</button>
+  </div>
+  <div class="grid">
+    <article class="project wide reveal" data-cat="thumbnail"><div class="visual thumb"><div class="type">THUMB<br>IMPACT</div></div><div class="projectinfo"><div><h3>High-Impact Thumbnail</h3><p>Bold composition / strong hierarchy</p></div><span class="tag">Thumbnail</span></div></article>
+    <article class="project small reveal" data-cat="logo"><div class="visual logo"><div class="type">AF</div></div><div class="projectinfo"><div><h3>Creator Mark</h3><p>Profile identity</p></div><span class="tag">Logo</span></div></article>
+    <article class="project small reveal" data-cat="banner"><div class="visual banner"><div class="type">YOUR<br>CHANNEL.</div></div><div class="projectinfo"><div><h3>Channel Banner</h3><p>Clean / cinematic</p></div><span class="tag">Banner</span></div></article>
+    <article class="project wide reveal" data-cat="branding"><div class="visual branding"><div class="type">APEX<br>FRAMZ</div></div><div class="projectinfo"><div><h3>Brand Identity</h3><p>Logo system / visual direction</p></div><span class="tag">Branding</span></div></article>
+    <article class="project small reveal" data-cat="thumbnail"><div class="visual thumb"><div class="type">GO<br>VIRAL.</div></div><div class="projectinfo"><div><h3>Gaming Thumbnail</h3><p>High contrast / focus</p></div><span class="tag">Thumbnail</span></div></article>
+    <article class="project small reveal" data-cat="logo"><div class="visual logo"><div class="type">AF.</div></div><div class="projectinfo"><div><h3>Minimal Mark</h3><p>Monogram / icon</p></div><span class="tag">Logo</span></div></article>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="sectionhead reveal"><div><div class="kicker">02 / SERVICES</div><h2>WHAT I CREATE</h2></div><p>Focused YouTube design built around clarity, recognition and a premium first impression.</p></div>
+  <div class="services">
+    <div class="service reveal"><div class="num">01</div><h3>YouTube Thumbnails</h3><p>Eye-catching thumbnails designed to improve clicks and make videos stand out.</p></div>
+    <div class="service reveal"><div class="num">02</div><h3>YouTube Banners</h3><p>Professional channel banners with strong branding and clean composition.</p></div>
+    <div class="service reveal"><div class="num">03</div><h3>YouTube Logos</h3><p>Unique profile logos designed to make channels instantly recognizable.</p></div>
+    <div class="service reveal"><div class="num">04</div><h3>Complete Channel Branding</h3><p>A consistent visual identity across your YouTube channel and social platforms.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div class="aboutcopy reveal"><div class="kicker">03 / ABOUT</div><h2>ABOUT APEX FRAMZ</h2><p>Apex Framz is a creative design brand focused on helping YouTube creators build stronger visual identities. From a recognizable profile logo to a banner that instantly sets the tone, every piece is designed to feel intentional, clean and bold.</p><p>The goal is simple: make your channel look like you take your content seriously.</p>
+    <div class="facts"><div class="fact">Creative Focus<strong>YouTube Branding</strong></div><div class="fact">Design Style<strong>Modern • Clean • Bold</strong></div><div class="fact">Specialty<strong>Logos • Banners • Thumbnails</strong></div><div class="fact">Approach<strong>Custom • Purposeful • Visual</strong></div></div>
+  </div>
+  <div class="logo-card reveal"><img src="assets/apex-framz-logo.png" alt="Apex Framz official logo"></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="sectionhead reveal"><div><div class="kicker">04 / PROCESS</div><h2>HOW IT WORKS</h2></div><p>A straightforward workflow from the first idea to final delivery.</p></div>
+  <div class="process">
+    <div class="step reveal"><div class="n">01 — DISCUSS</div><h3>Tell me what you need.</h3><p>Share your goals, references and the direction you want.</p></div>
+    <div class="step reveal"><div class="n">02 — DESIGN</div><h3>I build the concept.</h3><p>A focused first design is created around your channel.</p></div>
+    <div class="step reveal"><div class="n">03 — REFINE</div><h3>Make it feel right.</h3><p>We adjust the details and polish the final direction.</p></div>
+    <div class="step reveal"><div class="n">04 — DELIVER</div><h3>Ready to publish.</h3><p>You receive the final high-quality design files.</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div class="contactcopy reveal"><div class="kicker">05 / CONTACT</div><h2>LET'S BUILD YOUR BRAND.</h2><p>Need a professional YouTube logo, banner or thumbnail? Let's create something that makes your channel stand out.</p><p>Use the form to prepare your project request. Connect your preferred email or social profile in the code when you're ready.</p></div>
+  <form class="form reveal" id="contactForm">
+    <input name="name" required placeholder="Name" aria-label="Name">
+    <input type="email" name="email" required placeholder="Email" aria-label="Email">
+    <select name="service" required aria-label="What do you need?"><option value="">What do you need?</option><option>YouTube Thumbnail</option><option>YouTube Banner</option><option>YouTube Logo</option><option>Complete Channel Branding</option></select>
+    <textarea name="message" required placeholder="Tell me about your project..." aria-label="Message"></textarea>
+    <button class="btn" type="submit">SEND REQUEST</button><div class="status" id="status" aria-live="polite"></div>
+  </form>
+</div></section>
+
+<section class="cta"><div class="wrap reveal"><div class="kicker">START A PROJECT</div><h2>YOUR CHANNEL DESERVES BETTER DESIGN.</h2><a class="btn" href="#contact">START A PROJECT</a></div></section>
+</main>
+
+<footer class="footer"><div class="wrap footerin"><div><strong>APEX FRAMZ</strong> — Premium YouTube graphics & digital branding.</div><div>© 2026 Apex Framz. All rights reserved.</div></div></footer>
+
+<script>
+  const menu=document.querySelector('.menu'), links=document.querySelector('.links');
+  menu?.addEventListener('click',()=>{links.style.display=links.style.display==='flex'?'none':'flex';links.style.position='absolute';links.style.top='76px';links.style.right='20px';links.style.flexDirection='column';links.style.padding='18px';links.style.background='#0b0b0b';links.style.border='1px solid #252525'});
+  document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+    const f=btn.dataset.filter;document.querySelectorAll('.project').forEach(p=>p.hidden=f!=='all'&&p.dataset.cat!==f);
+  }));
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  document.getElementById('contactForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    document.getElementById('status').textContent='Thanks — your request is ready. Connect this form to your email/form service to receive submissions.';
+  });
+</script>
+</body>
+</html>
